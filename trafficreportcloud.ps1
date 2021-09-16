@@ -19,32 +19,32 @@ $end = Get-Date -Format MM/dd/yyyy
 $start = $(Get-Date).addMonths(-1).ToString("MM/dd/yyyy")
 
 
-Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end `
+Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end -PageSize 5000 `
 | Select-Object name, MessageCount, Direction | Where name -EQ "email" `
 | Export-csv -NoTypeInformation ".\File.csv"
 
 
-Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end `
+Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end -PageSize 5000 `
 | Select-Object name, MessageCount, Direction, (Date).toString("dd/MM/yyyy") | Where name -EQ "email" `
 | Export-csv -NoTypeInformation ".\File.csv"
 
 
-Get-MailTrafficTopReport -Domain "Domain" -StartDate $start -EndDate $end `
+Get-MailTrafficTopReport -Domain "Domain" -StartDate $start -EndDate $end -PageSize 5000 `
 | Select-Object name, MessageCount, Direction, (Date).toString("dd/MM/yyyy") | Where name -EQ "email" `
 | Export-csv -NoTypeInformation ".\File.csv"
 
 
-Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end `
+Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end -PageSize 5000 `
 | Select-Object name, MessageCount, Direction, (Date).toString("dd/MM/yyyy") | Where name -EQ "email" `
 | Export-csv -NoTypeInformation ".\File.csv"
 
 
-Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end `
+Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end -PageSize 5000 `
 | Select-Object name, MessageCount, Direction, (Date).toString("dd/MM/yyyy") | Where name -EQ "email" `
 | Export-csv -NoTypeInformation ".\File.csv" 
 
 
-Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end `
+Get-MailTrafficTopReport -Domain "Domain"  -StartDate $start -EndDate $end -PageSize 5000 `
 | Select-Object name, MessageCount, Direction, (Date).toString("dd/MM/yyyy") | Where name -EQ "email" `
 | Export-csv -NoTypeInformation ".\File.csv"
 
